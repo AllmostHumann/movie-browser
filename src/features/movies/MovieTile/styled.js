@@ -35,7 +35,7 @@ export const ImageWrapper = styled.img`
   height: auto;
   width: 100%;
   border-radius: 5px;
-  
+
   @media (max-width: ${mobileMaxBp}px) {
     width: 114px;
     height: 169px;

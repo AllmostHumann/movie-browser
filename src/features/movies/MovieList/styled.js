@@ -13,15 +13,15 @@ export const MovieList = styled.div`
 
   @media (max-width: ${mobileLargeBp}px) {
     grid-template-columns: repeat(3, 1fr);
-  };
+  }
 
   @media (max-width: ${mobileMaxBp}px) {
     gap: 16px;
     grid-template-columns: repeat(2, 1fr);
-  };
+  }
 
   @media (max-width: ${mobileMediumBp}px) {
     gap: 16px;
     grid-template-columns: 1fr;
-  };
+  } ;
 `;

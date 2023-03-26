@@ -8,34 +8,34 @@ export const Wrapper = styled.div`
   flex-direction: column;
   max-width: 1368px;
   margin: auto;
-`
+`;
 export const Title = styled.h1`
   margin: 0 0 40px 12px;
   font-weight: 600;
   font-size: 36px;
   line-height: 120%;
   transition: 0.5s;
-    @media (max-width: ${largeBp}px){
-      margin-bottom: 10px;
-      font-weight: 500;
-      font-size: 26px;
-      line-height: 120%;
-    }
-    @media (max-width: ${mobileMinBp}px){
-      margin-bottom: 10px;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 130%;
-    }
-`
+  @media (max-width: ${largeBp}px) {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 120%;
+  }
+  @media (max-width: ${mobileMinBp}px) {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+  }
+`;
 
 export const NoSearchImage = styled(NoSearch)`
   align-self: center;
   transition: 0.5s;
-  @media (max-width: ${largeBp}px){
-    scale:80%;
+  @media (max-width: ${largeBp}px) {
+    scale: 80%;
   }
-  @media (max-width: ${mobileMinBp}px){
+  @media (max-width: ${mobileMinBp}px) {
     scale: 50%;
   }
-  `
+`;

@@ -9,7 +9,7 @@ const PopularMovies = () => {
       <section>
         <SectionTitle>Popular Movies</SectionTitle>
         <MovieList>
-            <MovieTile />
+          <MovieTile />
         </MovieList>
       </section>
     </Container>

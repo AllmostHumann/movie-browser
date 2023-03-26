@@ -20,9 +20,9 @@ export const MovieTile = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch((fetchMoviesLoading()));
+    dispatch(fetchMoviesLoading());
     dispatch(fetchGenres());
-  }, [dispatch])
+  }, [dispatch]);
 
   const movies = useSelector(selectMovies);
 
@@ -30,10 +30,19 @@ export const MovieTile = () => {
     <>
       {movies.map(
         ({
-          id, title, poster_path, vote_average, vote_count, release_date, genre_ids,
+          id,
+          title,
+          poster_path,
+          vote_average,
+          vote_count,
+          release_date,
+          genre_ids,
         }) => (
           <TileWrapper key={id} id={id}>
-            <ImageWrapper src={`${imagesBaseUrl}/w500${poster_path}`} alt=""></ImageWrapper>
+            <ImageWrapper
+              src={`${imagesBaseUrl}/w500${poster_path}`}
+              alt=""
+            ></ImageWrapper>
             <DescriptionWrapper>
               <Title>{title}</Title>
               <Subtitle>{new Date(release_date).getFullYear()}</Subtitle>

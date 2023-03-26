@@ -1,5 +1,4 @@
-import { Header, Loader, Wrapper } from "./styled"
-
+import { Header, Loader, Wrapper } from "./styled";
 
 export const LoadingPage = ({ content }) => {
   return (
@@ -9,5 +8,5 @@ export const LoadingPage = ({ content }) => {
         <Loader />
       </Wrapper>
     </>
-  )
-}
+  );
+};

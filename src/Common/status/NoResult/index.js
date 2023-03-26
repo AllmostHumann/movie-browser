@@ -1,4 +1,4 @@
-import { Wrapper, Title, NoSearchImage } from "./styled"
+import { Wrapper, Title, NoSearchImage } from "./styled";
 
 export const NoResult = () => {
   return (
@@ -6,5 +6,5 @@ export const NoResult = () => {
       <Title>Sorry, there are no results for “Muan”</Title>
       <NoSearchImage />
     </Wrapper>
-  )
-}
+  );
+};
